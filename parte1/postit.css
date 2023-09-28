@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+
+body {
+    background-color: grey;
+    font-family: 'Caveat', cursive;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.2em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 10em auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1800px;
+    height: 800px;
+}
+
+@keyframes comparsa {
+    0% {
+        scale: 5;
+        transform: translate(500px, -300px) rotate(500deg);
+    }
+
+    100% {
+        scale: 1;
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 240px;
+    padding-left: 2em;
+    margin: 2em 2em;
+    box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.1);
+
+    animation-name: comparsa;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+
+
+/*GIALLO*/
+
+.backyellow {
+    background-color: rgb(233, 235, 129);
+
+    transform: rotate(-6deg);
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.backyellow:hover {
+    transform: rotate(0deg);
+    box-shadow: none;
+}
+
+
+
+/*VIOLETTO*/
+
+.backviolet {
+    background-color: rgb(175, 160, 209);
+
+    transform: rotate(-8deg);
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.backviolet:hover {
+    transform: rotate(0deg);
+    box-shadow: none;
+}
+
+
+
+/*VERDE*/
+
+.backgreen {
+    background-color: rgb(128, 196, 164);
+
+    transform: rotate(12deg);
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.backgreen:hover {
+    transform: rotate(0deg);
+    box-shadow: none;
+}
